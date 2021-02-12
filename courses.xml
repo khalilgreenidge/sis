@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<courses>
+  <course name="WebApplications">
+    <file id="assignment1">Web Applications/assignments/Assignment1.pdf</file>
+    <file id="assignment2">Web Applications/assignments/Assignment2.pdf</file>
+  </course>
+
+  <course name="MajorProject">
+    <file id="assignment1">Web Applications/assignments/Assignment1.pdf</file>
+    <file id="assignment2">Web Applications/assignments/Assignment2.pdf</file>
+  </course>
+</courses>

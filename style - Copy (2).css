@@ -1,0 +1,1055 @@
+/*********LAYOUT FOR BCC WEB PORTAL***************/
+body{
+	font-family: 'Open Sans', sans-serif;
+	background-color: #e4e4e4;
+	margin: 0;
+}
+
+body.applyBody{
+	margin-bottom: 10px;
+}
+
+
+#wrap {
+	margin: 0 0 0 0; 
+	/*Automatically centers the page, syntax: top&bottom left&right*/
+	height: auto;
+	width: 100%;
+	background-color: #FFFFFF;	
+	box-shadow: 0px 5px 30px #585858;
+	overflow: hidden;
+}
+
+
+#wrap.applyWrap, #wrap.loginWrap, #wrap.signupWrap {
+	margin: 10px auto;
+	width: 1040px;
+}
+
+#content.applyContent,#content.loginContent,,#content.signupContent, #footer, #menu{
+	box-shadow: 0px 5px 30px #585858;
+}
+
+/**********************************************************************
+*********************   GENERAL TAGS   ********************************
+***********************************************************************/
+
+
+textarea{
+	font-family: 'Open Sans';
+	font-size:17px;
+	border: 1px solid #e4e4e4;
+}
+
+input[type], textarea, select{
+	border-radius: 3px;
+    padding: 4px;
+	color: #585858;
+	border: solid 1px #ccc;
+}
+
+input[type]:-webkit-autofill{
+	background-color: white !important;
+	color: #585858 !important;
+}
+
+input[type=submit], [type=reset], [type=date], .button, button, select{
+	text-align: center;
+	border-radius: 3px;
+	background-color: #FF4000;
+}
+
+input[type=reset]{
+	background: white;
+	color: #585858;
+}
+
+input[type=submit], .button{
+	border: none;
+}
+
+input[type=submit], [type=reset], button{
+	height: 30px;
+	padding: 5px;
+	color: white;
+}
+
+button, select, input[type=submit], [type=reset]{
+	color: white;
+	font-weight: bold;
+	opacity: 0.9;	
+	width: 80px;
+}
+
+button:hover, select:hover, [type=submit]:hover, [type=reset]:hover{
+	opacity: 1;
+	box-shadow: 0px 1px 20px #888888;
+}
+
+/**************TABLE*********/
+
+table{
+	border-collapse: collapse;
+	border-color: #848484;
+	font-family: "Open Sans", sans serif;
+	width: auto;
+	height: auto;
+	
+}
+
+th{
+	background-color: #FF4000;
+	color: #FFFFFF;
+	padding: 8px;
+}
+
+th.wrap{
+	width: 100px;
+}
+
+
+h1{ 
+	font-size: 3.5vmin;
+}
+
+form  > h1{
+	font-size: 3vmin;
+	margin-bottom: 3%;
+}
+
+h2{
+	font-size: 20px;
+}
+
+div{
+	display: block;
+}
+
+
+@media screen and (max-width: 1039px){
+	#wrap{
+		width: 100%;
+		
+	}
+	
+	#header img{
+		width: 45%;
+	}
+	
+	/* .chat-sidebar{
+		width: 19.53125%;
+	} */
+	
+	.chat-sidebar{
+		display: none !important;
+    }
+                
+	.chat-popup{
+		display: none !important;
+	}
+	
+}
+
+@media only screen and (max-width : 640px){
+	#header > img{
+		width: 100%;
+	}
+	
+	#header span{
+		position: relative;
+		left: -50%;
+	}
+	
+	#header p{
+		position: relative;
+		top: -20px;
+	}
+	
+	#header button{
+		position: relative;
+		left: 70%;
+	}
+	
+}
+
+/******************************************
+*********** SIDEBAR MENU ******************
+******************************************/
+
+#main-sidebar{ 
+	padding-top: 50px;
+    height: 1104px;
+    width: 21%;
+	background-color: #585858;
+	position: relative;
+	color: #fff;
+	font-size: 14px;
+}
+
+#wrap > div:nth-child(3), #wrap > div:nth-child(4){
+	float: left;
+}
+
+#main-sidebar ul.sidebar-menu{
+	padding: 0;
+}
+
+#main-sidebar .treeview{
+	width: 100%;
+	height: 43px;
+	line-height: 43px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+#main-sidebar .treeview-menu{
+	display: block;
+	position: relative;
+	z-index: 3;
+	background-color: #333;
+	padding: 0;
+}
+
+#main-sidebar .treeview-menu li{
+
+	padding-left: 5%;
+}
+
+#main-sidebar ul.sidebar-menu > li.treeview:link ul.treeview-menu{
+	display: block;
+}
+
+#main-sidebar ul.sidebar-menu > li.treeview a{
+	/*padding-left: 5%;*/
+	height: inherit;
+	width: 80%;	
+	display: block;
+}
+
+#main-sidebar ul.sidebar-menu > li.treeview:hover, .treeview-menu li:hover{
+	border-left: solid 3px #fff;
+	background-color: #222d32;
+}
+
+#main-sidebar ul.sidebar-menu > li:first-child{
+	background-color: #1d1d1d;	
+	color: #ccc;
+	line-height: 37px;
+	height: 37px;
+	padding: 0 16%;
+	width: inherit;
+}
+
+#main-sidebar ul li{
+	list-style: none;
+}
+
+#main-sidebar ul li a:link, #main-sidebar ul li a:visited{
+	color: white;
+	text-decoration: none;
+	padding-left: 5%;
+}
+
+
+
+
+/******************************************
+******************CHAT ROOM ***************
+*******************************************/
+
+.chat-sidebar{
+	width: 200px;
+	position: fixed;
+	height: 100%;
+	right: 0px;
+	background: white;
+	top: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 1px solid rgba(29, 49, 91, .3);
+}
+
+.sidebar-name {
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 4px;
+	font-size: 12px;
+}
+            
+.sidebar-name span{
+	padding-left: 5px;
+}
+
+.sidebar-name a{
+	display: block;
+	height: 100%;
+	text-decoration: none;
+	color: inherit;
+}
+
+.sidebar-name:hover{
+	background-color:#e1e2e5;
+}
+
+.sidebar-name img{
+	width: 32px;
+	height: 32px;
+	vertical-align:middle;
+	border-radius: 15px;
+}
+
+/************************************************************************
+***************************      POP UP    ******************************
+*************************************************************************/
+
+.popup-box{
+	display: none;
+	position: fixed;
+	bottom: 10px;
+	right: 220px;
+	height: 285px;
+	background-color: rgb(237, 239, 244);
+	width: 300px;
+	border: 1px solid rgba(29, 49, 91, .3);
+}
+
+.popup-box .popup-head{
+	background-color: #FF4000;
+	padding: 5px;
+	color: white;
+	font-weight: bold;
+	font-size: 14px;
+	clear: both;
+}      
+
+.popup-box .popup-head .popup-head-left{
+	float: left;
+}
+
+.popup-head-left img{
+	border-radius: 15px;
+	height: 30px;
+	width: 30px;
+}
+
+.popup-box .popup-head .popup-head-right{
+	float: right;
+	opacity: 0.5;
+}
+
+.popup-box .popup-head .popup-head-right a{
+	text-decoration: none;
+	color: inherit;
+}
+
+.popup-box .popup-messages{
+	
+	overflow-y: scroll;
+}
+		
+.popup-messages{
+	height: 73%;
+}
+
+.send-bar{
+	border-top: 1px solid #c9d0da;
+	cursor: text;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	background-color: white;
+	padding: 5px 49px 3px 5px;
+	position: relative;
+}
+
+.send-bar textarea{
+	margin: 0;
+	height: 20px;
+	font-size: 13px;
+	width: 250px;
+	background-color: white;
+	outline: none;
+	padding: 0;
+	border: 0;
+	resize: none
+}
+
+.msgln{
+	max-width: 171px;
+	padding-left: 6px;
+	padding-right: 5px;
+	background-color: #dbedfe;
+}
+
+/*******************************************************************************************ANIMATION**********************************************************************************************************************/
+
+
+#col a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+#row{
+	animation: slide-left 2s ;
+	-webkit-animation: slide-left 2s ;
+	-moz-animation: slide-left 2s ;
+	-o-animation: slide-left 2s ;
+	position: relative;
+	margin-top: 20px;
+	clear: both;
+}
+
+@keyframes slide-left{
+	0%{
+		right: -800px;
+		transform: skewX(-10deg);
+	}
+	99%{
+		transform: skewX(-1deg);
+	}
+	100%{
+		right: 0;
+	}
+}
+ 
+@-webkit-keyframes slide-left{
+	0%{
+		right: -800px;
+		transform: skewX(-10deg);
+	}
+	99%{
+		transform: skewX(-1deg);
+	}
+	100%{
+		right: 0;
+	}
+}
+@-moz-keyframes slide-left{
+	0%{
+		right: -800px;
+		transform: skewX(-10deg);
+	}
+	99%{
+		transform: skewX(-1deg);
+	}
+	100%{
+		right: 0;
+	}
+}
+@-o-keyframes slide-left{
+	0%{
+		right: -800px;
+		transform: skewX(-10deg);
+	}
+	99%{
+		transform: skewX(-1deg);
+	}
+	100%{
+		right: 0;
+	}
+}
+
+#col{
+	box-shadow: -20px 15px 30px grey,
+			/*        H	  V    S   C */
+				inset 2px 0px 1px grey, /*LEFT*/
+				inset 0px -5px 1px grey; /*BOTTOM*/
+	/* border-left: 1px solid #585858;
+	border-bottom: 2px solid grey;  */
+	cursor: pointer;
+	padding-top: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	margin-top: 15px;
+	margin-left: 20px;
+	float: left;
+	border-radius: 7px;
+	width: 200px;
+	height: 60px;
+	color: white;
+	font-size: 20px;
+	-webkit-transition: transform 0.5s;
+	transition: transform 0.5s;
+	-moz-transition: transform 0.5s;
+	-o-transition: transform 0.5s;
+ }
+ 
+#col:hover{
+	transform: rotateY(25deg);
+	-webkit-transform: rotateY(25deg);
+	-moz-transform: rotateY(25deg);
+	-o-transform: rotateY(25deg); 
+}
+  
+ #col span{
+	font-size: 25px;
+ }
+ 
+ #col.a{
+	background-color: #00FF00;
+ }
+ 
+ #col.b{
+	background-color: #FFFF00;
+ }
+ 
+#col.c{
+	background-color: #FF8000;
+}
+
+#col.d{
+	background-color: #FF4000;
+}
+
+#col.f{
+	background-color: red;
+}
+
+#ani{
+	position: absolute;
+	background-color: #689f38;
+	text-align: center;
+	top:-100px;
+	left: 35%;
+	-webkit-animation: move 7s ease;
+	animation: move 7s ease;
+	-moz-animation: move 7s ease;
+	-o-animation: move 7s ease;
+	width: 500px;
+	padding-top: 20px;
+	font-weight: bold;
+	color: white;
+	height:70px;
+	border-bottom:1px solid #ccc;
+	border-radius:4px;
+	background:linear-gradient(top, rgba(247,247,247,1) 0%,rgba(229,229,229,1) 100%);
+	line-height:0;
+	box-shadow:0px 3px 5px rgba(0,0,0,.2);
+ }
+ 
+ 
+#ani img{
+	margin: 0;
+	width: 20px;
+	height: 20px;
+	padding-right: 5px;
+ }
+ 
+#ani.success{
+	background-color: #dff0d8;
+	color: #689f38;
+ }
+ 
+#ani.error{
+	  background-color: #f2dede;
+	  color: #a94442;
+	  
+ } 
+ 
+#ani.warning{
+	color: #ffa000;
+	background-color: #fcf8e3;
+}
+ 
+#ani.info{
+	background-color: #d9edf7;
+	color: #31708f;
+ }
+
+ @-webkit-keyframes move{
+	0%{ top: -100px; }
+	50% {top: 300px;}
+	100%{top:-100px; }
+ } 
+@-moz-keyframes move{
+	0%{ top: -300px; }
+	50% {top: 300px;}
+	100%{top:-300px; }
+} 
+@-o-keyframes move{
+	0%{ top: -300px; }
+	50% {top: 300px;}
+	100%{top:-300px; }
+ }
+ @keyframes move{
+	0%{ top: -300px; }
+	50% {top: 300px;}
+	100%{top:-300px; }
+ }
+
+/**************************************************************************************************HEADER*****************************************************************************************************************/
+
+#header{
+	height: 170px;
+}
+
+#header, #menu{
+	width: inherit
+}
+
+
+#header button{
+	height: 20px;
+	width: 80px;
+	padding: 0;
+}
+
+.msg{
+	position: relative;
+	top: 90px;
+	right: 50px;
+	color: #848484;
+}
+/*******************************************************************************************************MENU*****************************************************************************************************************/
+.bar{
+	background-color: #FF4000;
+	color: #FFFFFF;
+	font-size: 15px;
+	clear: both;
+	height: 50px;
+}
+
+#menu{
+	background-color: #FF4000;
+	color: white;
+	font-size: 15px;
+	clear: both;
+	width: inherit;
+	height: 60px;
+}
+
+#menu ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#menu ul > li{
+	float: left;
+	position: relative;
+	/**
+	ADD HEIGHT TO "li" TO MAKE THE ENTIRE MENU BAR ONE HEIGHT
+	THEN ADD THE SAME HEIGHT VALUE TO "a:link" TO MAKE THE BACKGROUND
+	COLOR SHOW WHEN HOVERED TO THE ENTIRE COLUMN FROM TOP TO BOTTOM
+	RATHER THAN JUST THE TOP.
+	*/
+	
+}
+
+
+#menu ul li  a:link,#menu li a:visited{
+	display: block;
+	width: 120px;
+	color: inherit;
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+	padding: 5px;
+}
+
+#menu > ul > li a:hover{
+	background-color: #6E6E6E;
+}
+
+.dropdown-content {	
+	background-color: white;
+    display: block;
+    position: absolute;
+	color: #585858;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content li{
+	width: 100%;
+	overflow: hidden;
+}
+
+.dropdown-content a{
+	width: inherit !important;
+}
+
+
+.dropdown-content a:hover{
+	background-color: #f1f1f1 !important;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+	z-index: 9;
+}
+
+/*************************************************************************
+*****************************   CONTENT    *******************************
+*************************************************************************/
+#shadowImg{
+	box-shadow: 0px 5px 80px grey; 
+}
+
+#content.applyContent, #content.loginContent, #content.signupContent {
+    width: inherit;
+	box-sizing: border-box;
+}
+
+#content {
+	background: #ffffff;
+	min-height: 800px;
+	padding: 20px;
+	position: relative;
+    width: 75.73%;
+}
+
+#bubble{
+	margin: 0 auto;
+	width: 250px;
+	border-radius: 4px;
+	color: white;
+	clear: both;
+}
+
+#content.login a:link, #content.login a:visited{
+	color: #888888;
+}
+
+#content.menu{
+	height: 100%;
+}
+
+#content  li a{
+	text-decoration: none; 
+	color: black;
+}
+
+/******LOGIN PAGE*******/
+
+#left.login{
+	width: 300px;
+	height: auto;
+	border: 3px solid  #ccc;
+	border-radius: 4px;
+	padding: 10px;
+	float: left;
+	position: relative;
+	left: 50px;
+}
+
+#middle.login{
+	float: left;
+	width: 300px;
+	height: 100px;
+	margin-left: 100px;
+	border: 2px solid #ccc;
+	padding: 10px;
+}
+
+#bottom.login{
+	clear: both;
+}
+
+/*******MAIN MENU PAGE****/
+
+#left.menu{
+	width: 260px;
+	border-style: 2px solid #ccc;
+	float: left;
+	
+}
+
+#middle.menu{
+	margin-left: 5px;
+	min-width: 700px;
+	float: left;
+	border: 2px solid #ccc;
+	padding: 10px;
+}
+
+
+#tools button{
+	width: 164px;
+}
+
+/********STUDENT REPORT PAGE*******/
+
+#left.report{
+	float: left;
+}
+
+#middle.report{
+	float: left;
+	width: 630px;
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-left: 20px;
+}
+
+#middle.report h3{
+	text-align: center;
+}
+
+#bottom{
+	clear:both;
+}
+
+/*************FORM***********/
+form{
+	font-family: 'Open Sans', sans-serif;
+}
+
+input[type=date]{
+	background-color: #FF4000;
+	color: white;
+	height: 40px;;
+}
+
+
+/***********************************
+************ COURSE PAGE ***********
+***********************************/
+
+.courseContent hr{
+	margin-top: 10%;
+}
+
+.courseHeader{
+	text-align: center;
+}
+
+.courseContent{
+	text-align: left;
+}
+
+.courseContent a{
+position: relative;
+margin-top: 2%;
+display: block;
+}
+
+.courseContent a:link{
+
+color: #ff4000;
+
+}
+
+.courseContent a:visited{
+color: #ccc
+}
+
+.btn-primary {
+ background-color: #3c8dbc;
+ border-color: #367fa9;
+}
+
+.btn {
+ border-radius: 3px;
+ -webkit-box-shadow: none;
+ box-shadow: none;
+ border: 1px solid transparent;
+}
+
+.btn-primary {
+ color: #fff;
+ background-color: #337ab7;
+ border-color: #2e6da4;
+}
+
+.btn {
+ display: inline-block;
+ padding: 6px 12px;
+ margin-bottom: 0;
+ font-size: 14px;
+ font-weight: 400;
+ line-height: 1.42857143;
+ text-align: center;
+ white-space: nowrap;
+ vertical-align: middle;
+ -ms-touch-action: manipulation;
+ touch-action: manipulation;
+ cursor: pointer;
+ -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+ background-image: none;
+ border: 1px solid transparent;
+ border-radius: 4px;
+}
+
+.fileUpload {
+   position: relative;
+   overflow: hidden;
+   margin: 10px;
+}
+
+.fileUpload input.upload {
+   position: absolute;
+   top: 0;
+   right: 0;
+   margin: 0;
+   padding: 0;
+   font-size: 20px;
+   cursor: pointer;
+   opacity: 0;
+   filter: alpha(opacity=0);
+}
+
+.loginForm{
+	padding: 10px 20px 10px;
+	display: block;
+	width: 500px;
+	border-radius: 7px;
+	position: relative;
+	left: 25%;
+	-webkit-box-sizing: content-box;
+	box-shadow: 0px 5px 30px grey;
+}
+
+.loginContent a{
+	color: #888888;
+}
+
+.loginForm h1{
+	text-align: center;
+}
+
+
+.loginForm input[type=text],.loginForm input[type=number], .loginForm input[type=email], .loginForm input[type=password], .loginForm input[type=date],  .loginForm select{
+	position: absolute;
+	left: 40%;
+}
+
+.loginForm input[type=submit], button, .loginForm input[type=number], [type=date], .loginForm input[type=password], .loginForm input[type=text], .loginForm input[type=email], .loginForm input[type=reset], select{
+	width: 140px;
+}
+
+.loginForm [type=submit]{
+	display: block;
+	margin: 0 auto;
+}
+
+.loginForm [type=reset]{
+	position: relative;
+	left: 30%;
+}
+
+
+/********************************************************************
+***********************      SIGN UP     ****************************
+*********************************************************************/
+
+.signupForm h1{
+	text-align: center;
+}
+
+.signupForm > div label:last-child{
+	margin-left: 20%;
+}
+
+.signupForm > div{
+	width: 100%;
+	margin-bottom: 5%;
+}
+
+.signupForm{
+    width: 44%;
+	box-sizing: border-box;
+    margin: 5% auto;
+    box-shadow: 0px 5px 30px #ccc;
+    padding: 3% 5%;
+}
+
+.signupForm input[type]:not([type=radio]):not([type=reset]):not([type=submit]){
+	float: right;
+}
+
+
+
+/****************************
+************ APPLY **********
+****************************/
+
+.apply {
+    padding: 3% 1%;
+	margin: 1% auto;
+}
+
+.apply hr{
+	clear: both;
+}
+
+.apply input[type]{
+	color: #585858;
+}
+
+.apply label, [type=radio]{
+	cursor: pointer;
+}
+
+
+.apply textarea{
+	resize: none;
+}
+
+.apply input[type=date]{
+	background-color: #585858;
+	color: white;
+}
+
+.apply div {
+	margin-top: 3%;
+	position: relative;
+}
+
+.apply div:first-child{
+	width: 100%;
+}
+
+.apply div input[type]:first-child{
+	margin-left: 10px;
+}
+
+.apply div input[type]:last-child{
+	float: right;
+}
+
+.apply div:not(:last-child) {
+	float: left;
+}
+
+.apply > div:last-child{
+	margin: 3% auto;
+	width: 200px;
+}
+
+
+/************UPLOADPAGE*******/	
+.submissionDisplay {
+	text-align:center;
+}
+
+.displaySubInfo {
+	margin-left:350px;	
+}
+
+.uploadFile {
+	padding-top: 25px;
+}
+
+
+
+/*************FOOTER********/
+#footer {
+	height: 120px;
+	padding: 1%;
+	line-height: 20px;
+	text-align: center;
+	background-color: #848484;
+	color: #ccc;
+	font-size: 11px;
+	clear: both;
+}
+
+#footer.applyFooter, #footer.loginFooter, #footer.signupFooter{
+	width: inherit;
+	box-sizing: border-box;
+}

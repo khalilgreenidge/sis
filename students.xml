@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+  <student id="001">
+    <course>Web Applications</course>
+    <course>Major Project</course>
+    <course>Major Project</course>
+    <course>Major Project</course>
+    <course>&lt;br /&gt;&#13;
+&lt;b&gt;Notice&lt;/b&gt;:  Undefined variable: course in &lt;b&gt;C:\xampp\htdocs\SIS-static\addstudent.php&lt;/b&gt; on line &lt;b&gt;70&lt;/b&gt;&lt;br /&gt;&#13;
+</course>
+  </student>
+  <student id="002">
+    <course>Web Applications</course>
+    <course>Major Project</course>
+    <course>Major Project</course>
+  </student>
+  <student id="003">
+    
+  </student>
+  <student id="67">
+    <course>Web Applications</course>
+  </student>
+  <student id="68"/>
+</students>

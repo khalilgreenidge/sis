@@ -1,0 +1,23 @@
+<select name="course1" required >
+							<option value="">Choose carefully</option>
+							<?php
+								$con = mysql_connect("localhost", "root", "");
+								
+								$db = mysql_select_db("sis");
+								
+								$division = $_SESSION["division"];
+								
+								$rs = mysql_query("SELECT * FROM course WHERE division_id = $division");
+								
+								if(!$con || !$db || !$rs){
+									die('Error: '.mysql_error());
+								}
+								else{
+									//PRINT MESSAGE
+									while($row = mysql_fetch_array($rs)){
+										echo "<option value=' ".$row["name"]."'>".$row["name"]."</option>
+										";
+									}
+								}
+							?>
+						</select><br/><br/>
