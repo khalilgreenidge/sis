@@ -1,6 +1,9 @@
 # BCC Tutor Portal
 This project contains a web-based Student Information System (SIS), similar to Moodle. This was created to allow tutor and students to interact online whether it be uploading assignments, viewing submissions, registering students, adding students to a class etc. This project was created using PHP, HTML, CSS, and Javascript.
 
+<img width="800" alt="sis" src="https://github.com/khalilgreenidge/sis/assets/76123540/675b4ec0-0c76-43e9-ac7e-103d99cbcb2d">
+
+
 # Assumptions
 Kindly note, this is the static version of the website to show the key functionality. Therefore, all forms submissions will not save, as I have disconnected the database functionality just to show you how it looks.
 
